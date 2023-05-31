@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root{
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-Very-dark-blue: hsl(234, 17%, 12%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main,
+.title-box{
+    text-align: center;
+    background: url('./images/bg-stars.svg'), linear-gradient(180deg, var(--Very-Very-dark-blue) 40%, var(--Very-dark-blue)60%);
+    background-position: center, center;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    padding: 6rem 0 17rem;
+}
+
+.title-box{
+    padding: 1rem 0;
+    background:url('./images/bg-stars.svg'), linear-gradient(180deg, var(--Very-dark-blue), var(--Very-dark-blue));
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    margin-bottom: 4rem;
+}
+
+.title{
+    color: var(--White);
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.time-list{
+    max-width: 100rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 6.5rem);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--Very-dark-blue);
+    margin: auto;
+}
+
+.bg-container{
+    background-color: var(--Dark-desaturated-blue);
+    height: 6rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 0 1.5px var(--Very-Very-dark-blue);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-container::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--Very-Very-dark-blue);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -.5rem;
+    z-index: 10;
+}
+
+.bg-container::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--Very-Very-dark-blue);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -.5rem;
+}
+
+.first-bg{
+    background-color: var(--Dark-desaturated-blue);
+    filter: brightness(90%);
+    border-radius: .5rem;
+    height: 48%;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.last-bg{
+    background-color: var(--Dark-desaturated-blue);
+    filter: brightness(110%);
+    border-radius: .5rem;
+    height: 48%;
+    width: 100%;
+}
+
+.time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.4rem;
+    color: var(--Soft-red);
+    z-index: 10;
+}
+
+.box p{
+    font-size: 1.4rem;
+    color: var(--Grayish-blue);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+footer{
+    min-height: 18rem;
+    background: url('./images/pattern-hills.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 180% 80%;
+    background-color: var(--Very-dark-blue);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 8rem 0 3rem;
+}
+
+.attribution{
+    font-size: 1.6rem;
+    color: var(--Grayish-blue);
+}
+
+.attribution > a{
+    color: var(--Soft-red);
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (min-width:768px) {
+    .time-list{
+        grid-template-columns: repeat(auto-fit, 15rem);
+    }
+
+    .box p{
+        letter-spacing: 4px;
+    }
+}
+
+@media(hover:hover){
+    .icon:hover{
+        filter: grayscale(1%) sepia(1%) brightness(103%) hue-rotate(280deg) saturate(110%) contrast(210%) invert(90%);
+    }
+
+    .attribution > a:hover{
+        border-bottom: 1px solid var(--Soft-red);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
